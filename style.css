@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: black;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#container {
+  display: flex;
+  background-color: rgb(0, 0, 0);
+  height: 100%;
+  align-items: center;
+  flex-direction: column;
+}
+
+header {
+  border-bottom: 1px solid rgb(58, 58, 60);
+}
+
+.title {
+  color: gainsboro;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0.4rem 0 0.4rem 0;
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #444;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#reset-game {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#reset-game:hover {
+  background-color: darkgreen;
+}
+
+.settings {
+  overflow: hidden;
+}
+
+#board-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.square {
+  border: 2px solid rgb(58, 58, 60);
+  min-width: 60px;
+  min-height: 60px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#keyboard {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.keyboard-row {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+
+.key {
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #ddd;
+  color: #333;
+  text-align: center;
+  min-width: 40px;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.key:hover {
+  background-color: #bbb;
+}
+
+.message {
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+  position: relative;
+  z-index: 5;
+  /* Ser till att elementet är ovanpå andra element i koden*/
+}
+
+.hidden {
+  display: none;
+}
+
+/*Colorblind-mode*/
+#colorblind-mode {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#colorblind-mode:hover {
+  background-color: darkgreen;
+}
+
+body.colorblind .correct-position {
+  background-color: #172bc4;
+}
+
+body.colorblind .wrong-position {
+  background-color: #b51717;
+}
+
+body.colorblind .key.incorrect {
+  background-color: rgb(68, 68, 68);
+}
+
+.correct-position {
+  background-color: green;
+}
+
+.wrong-position {
+  background-color: #ffd700;
+}
+
+.incorrect {
+  background-color: rgb(68, 68, 68);
+}
