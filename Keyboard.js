@@ -24,6 +24,7 @@ function createKeyboard() {
 
 function keyboardInput() {
     document.addEventListener("keydown", (event) => {
+        if (gameOver) return;
         const key = event.key.toUpperCase();
         if ((key >= "A" && key <= "Z") || key === "ENTER" || key === "BACKSPACE") {
             if (key === "BACKSPACE") {
