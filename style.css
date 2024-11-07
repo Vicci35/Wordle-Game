@@ -174,3 +174,30 @@ body.colorblind .key.incorrect {
 .incorrect {
   background-color: rgb(68, 68, 68);
 }
+
+/*Light Mode*/
+#light-mode {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#light-mode:hover {
+  background-color: darkgreen;
+}
+
+.light-mode #container {
+  background-color: #ffffff;
+}
+.light-mode .square {
+  color: #333;
+}
+.light-mode .title {
+  color: #333;
+}
+.light-mode .incorrect {
+  background-color: #a1a0a0;
+}
