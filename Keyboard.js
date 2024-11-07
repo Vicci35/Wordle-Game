@@ -41,6 +41,5 @@ function updateKeyColor(keyDiv, className) {
     if (!keyDiv.classList.contains("correct-position")) {
         keyDiv.classList.remove("wrong-position", "incorrect");
         keyDiv.classList.add(className);
-        console.log(`Uppdaterar färg för ${keyDiv.id} till ${className}`); // Felsökningslogg
     }
 }
