@@ -1,3 +1,4 @@
+//Skapar boardet
 function createBoard() {
   const board = document.getElementById("board");
   for (let i = 0; i < maxAttempts * 5; i++) {
